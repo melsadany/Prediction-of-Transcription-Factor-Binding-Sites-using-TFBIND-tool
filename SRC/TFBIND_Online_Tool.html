@@ -1,0 +1,88 @@
+
+<!-- saved from url=(0021)http://tfbind.hgc.jp/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style></style></head><body text="#FFFFFF" bgcolor="#151039" link="#FFFF00" vlink="#20A0FF" alink="#00A000">
+
+<title>TFBIND INPUT</title>
+
+<center><h1>
+TFBIND
+</h1></center>
+<i>
+Please input your sequence in FASTA format, e.g.<br>
+&gt; COMMENTS<br>
+ACATCTGCTATAAAATACGATGCAGTCACGT<br>
+
+<form action="http://tfbind.hgc.jp/cgi-bin/calculate.cgi">
+<!--<INPUT TYPE="text" NAME="seq">-->
+<textarea rows="8" cols="40" wrap="soft" name="seq"></textarea>
+<br>
+<input type="submit">
+<input type="reset">
+</form>
+
+or select FASTA format file<br>
+<form action="http://tfbind.hgc.jp/cgi-bin/calculate2.cgi" method="POST" enctype="multipart/form-data">
+<input type="file" name="seqfile">
+<input type="CHECKBOX" name="compress" value="compress">Compress result
+<input type="submit" value="upload and go">
+</form>
+
+TFBIND : Software for searching transcription factor binding sites
+(including TATA boxes, GC boxes, CCAAT boxes, transcription start sites
+(TSS)).
+This tool uses weight matrix in transcription factor database TRANSFAC
+R.3.4
+developed by Dr. Wingender et al, and the cut-offs originally estimated
+by our research.
+<br>
+<br>
+Output format (space-separated):<br>
+Column1: Transcription factor matrix ID (from TRANSFAC R.3.4).<br>
+Column2: Transcription factor label (from TRANSFAC R.3.4).  V means vertebrate.<br>
+Column3: Similarity (0.0-1.0) between a registered sequence for the transcription factor binding sites and the input sequence (at the position shown in the next column).<br>
+Column4: Position on the input sequence.<br>
+Column5: Strandness. + and - means forward and reverse strands that the transcription factor binds, respectively.<br>
+Column6: Consensus sequence (fixed) of the transcription factor binding sites. S = C or G, W = A or T, R = A or G, Y = C or T, K = G or T, M = A or C, N = any base pair.<br>
+Column7: Subsequence from the input sequence at the position - corresponding to the consensus sequence.<br>
+<br>
+<p>
+</p><center> <i><b>IMPORTANT NOTICE</b></i> </center>
+<p>
+</p><h2><a name="License">
+</a><li><a name="License"> ABOUT LICENSE</a></li></h2>
+NO LICENSE REQUIRED.
+<br>
+If you use our tool or cut-offs, could you please cite our paper:
+<br>
+<dl>
+<dd> T.Tsunoda, and T.Takagi.<br>
+    <em>Estimating Transcription Factor Bindability on DNA</em>.<br>
+    BIOINFORMATICS, Vol.15, No.7/8, pp.622-630, 1999.
+</dd></dl>
+<br>
+
+<h2><a name="HTTP" href="http://tfbind.hgc.jp/cutoff_table.html">
+</a><li><a name="HTTP" href="http://tfbind.hgc.jp/cutoff_table.html"> CUTOFF TABLE for TRANSFAC R.3.4</a></li></h2>
+
+<p>
+</p><h2><a name="Contact">
+</a><li><a name="Contact">Contact:</a></li></h2>
+<ul>
+<a name="HTTP" href="http://emu.src.riken.jp/">
+Professor Tatsuhiko TSUNODA</a> <br>
+Ph.D.(Medicine) &amp; Ph.D.(Eng.)<br>
+<br>
+Professor<br>
+Department of Medical Science Mathematics, Medical Research Institute, Tokyo Medical and Dental University<br>
+1-5-45, Yushima, Bunkyo, Tokyo, 113-8510, JAPAN<br>
+<br>
+Group Director, Chief Scientist<br>
+Medical Science Mathematics, RIKEN Center for Integrative Medical Sciences<br>
+1-7-22, Suehiro, Tsurumi, Yokohama, 230-0045, JAPAN<br>
+<br>
+E-mail:<br>
+<img src="./TFBIND_Online_Tool_files/tsunoda.png">
+<p>
+
+
+</p></ul></i><div class="drop-hint" id="drop-to-share-hint" style="display: none; background-image: url(&quot;chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/dropToShareHint.png&quot;); background-size: 67px 327px;"><a class="share-btn-close"></a><a class="btn-options"></a><div class="drop-hint-bubble" id="drop-hint-bubble-share" style="display: none; background-image: url(&quot;chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/dropToShareHintBubble.png&quot;); background-size: 253px 79px;"></div></div><div class="drop-hint" id="drop-to-search-hint" style="display: none; background-image: url(&quot;chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/dropToSearchHint.png&quot;); background-size: 67px 327px;"><a class="search-btn-close"></a><a class="btn-options"></a><div class="drop-hint-bubble" id="drop-hint-bubble-search" style="display: none; background-image: url(&quot;chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/dropToSearchHintBubble.png&quot;); background-size: 215px 79px;"></div></div><div class="dropAreaContainer" style="display: none; right: 0px;"><div class="searchDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(220, 220, 220, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/web-search-content.png" style="max-height: 81px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="searchDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(240, 240, 240, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/video-search-content.png" style="max-height: 40px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="searchDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(220, 220, 220, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/google-images-content.png" style="max-height: 88px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="searchDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(240, 240, 240, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/google-translate-content.png" style="max-height: 82px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="searchDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(220, 220, 220, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/wikipedia-content.png" style="max-height: 86px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="dropAreaSettings" style="width: 142px; height: 16.6667%; background-color: rgba(58, 58, 58, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/btn_settings.png" style="max-height: 25px; height: 90%; background-color: transparent;" class="disable-manipulations"></div></div><div class="dropAreaContainer" style="display: none; left: 0px;"><div class="shareDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(60, 90, 152, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/facebook-share-content.png" style="max-height: 25px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="shareDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(233, 246, 255, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/twitter-content.png" style="max-height: 23px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="shareDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(235, 235, 235, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/pinterest-content.png" style="max-height: 28px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="shareDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(58, 58, 58, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/google-plus-center-content.png" style="max-height: 56px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="shareDropArea" style="width: 142px; height: 16.6667%; background-color: rgba(248, 248, 248, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/providers/linkedin-content.png" style="max-height: 31px; height: 90%; background-color: transparent;" class="disable-manipulations"></div><div class="dropAreaSettings" style="width: 142px; height: 16.6667%; background-color: rgba(58, 58, 58, 0.9);"><span class="disable-manipulations"></span><img src="chrome-extension://cipmepknanmbbaneimacddfemfbfgpgo/images/content/btn_settings.png" style="max-height: 25px; height: 90%; background-color: transparent;" class="disable-manipulations"></div></div></body></html>
